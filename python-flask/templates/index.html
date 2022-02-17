@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <title>歡迎光臨，請註冊登入系統</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">歡迎光臨，請註冊登入系統</h1>
+    </div>
+    
+    <form action="/signup" method="POST">
+        <section class="container">
+            
+                <h2>註冊系統</h2>
+    
+            <div class="register">
+                <div class="nickname"> <label for="nickname">姓名</label>
+                    <input type="text" name="nickname"  placeholder="請輸入姓名">   
+                </div>
+                <div class="register_ac"> <label for="new_ac">帳號</label>
+                    <input type="text" name="new_ac"  placeholder="請輸入註冊帳號">
+                </div>
+               <div class="register_pass_word">
+                <label for="new_psw">密碼</label>
+                <input type="password" name="new_psw"  placeholder="請輸入註冊密碼">
+               </div>
+               <div class="btn_register_fram">
+                <button type="submit" class="btn_register" id="register_btn">註冊</button>
+               </div>
+            </div>
+
+        </section>
+
+    </form>
+    
+    <form action="{{url_for('signin')}}" method="POST">
+        <section class="container">
+            <h2>登入系統</h2>
+            <div class="login">
+                <div class="ac"> <label for="uname">帳號</label>
+                    <input type="text" name="uname"  placeholder="請輸入您的帳號">
+                </div>
+               <div class="pass_word">
+                <label for="psw">密碼</label>
+                <input type="password" name="psw"  placeholder="請輸入您的密碼">
+               </div>
+               <div class="btn_lg_fram">
+                <button type="submit" class="btn_login">登入</button>
+               </div>
+                
+            </div>  
+        </section>
+    </form>
+</body>
+</html>

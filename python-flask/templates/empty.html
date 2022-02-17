@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <title>帳號、密碼任一為空</title>
+</head>
+<body>
+    
+    <form action="/empty" method="GET">
+        <section class="container">
+            <h1>失敗頁面</h1>
+            <h2>帳號、密碼任一為空</h2>
+            <p>請輸入帳號、密碼</p>
+            <!-- <input type="text" name="message" style="overflow: hidden;"> -->
+        </section>
+    </form>
+</body>
+</html>

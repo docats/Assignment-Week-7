@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <title>歡迎光臨，這是會員頁</title>
+</head>
+<body>
+    
+    <form action="/member" method="GET">
+        <section class="container">
+            <h1>{{username}}，歡迎光臨，這是會員頁</h1>
+            <h3>恭喜您 ，成功登入系統</h3>
+            <h3><a href="/signout">登出系統</a></h3>
+        </section>
+    </form>
+</body>
+</html>
