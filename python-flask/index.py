@@ -113,6 +113,7 @@ def api():
         name=result[1]
         user_name=result[2]
         allData={"id":id,"name":name,"username":user_name}
+        print("allData:",type(allData))
         return jsonify(allData)
     else:
         return jsonify({"data":None})
