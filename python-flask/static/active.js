@@ -13,7 +13,7 @@ function search(){
         }
         else{ //如果有資料
             let name=json.data.name;
-            let username=json.data.username;
+            // let username=json.data.username;
             console.log("name:",name);
             // rname.innerHTML=name+ "("+rname+")"
             rname.innerHTML=name+ "("+qname+")";   
