@@ -77,11 +77,20 @@ h1,h3{
 	margin:10px 0;
 }
 
-.btn_lg_fram,.btn_register_fram{
+.btn_lg_fram,.btn_register_fram,.search_area,.title{
 	text-align: center;
 }
 
-.title{
-	text-align: center;
+.search_area h2{
+	padding:10px 0;
 }
 
+.urname{
+	font-size: 3rem;
+	padding:15px 0;
+}
+
+.container h1{
+	line-height: 1.6;
+	text-align: center;
+}

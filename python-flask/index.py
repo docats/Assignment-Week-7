@@ -106,13 +106,10 @@ def api():
         result=cursor.fetchone() #我只需要讀取一筆紀錄
         mydb.commit()
     if got!=0:
-        # id=result["id"]
-        # name=result["name"]
-        # user_name=result["username"]
         id=result[0]
         name=result[1]
         user_name=result[2]
-        allData={"id":id,"name":name,"username":user_name}
+        allData={"data":{"id":id,"name":name,"username":user_name}}
         print("allData:",type(allData))
         return jsonify(allData)
     else:
